@@ -1,0 +1,47 @@
+<div class="container">
+<div class="total"> Money still to be allocated: $<span id="money">600 </span> </div>
+
+<li class="option"> Shopping </li>
+<input class="amount" onchange="updateTotal(0)" type="text" value="0"> 
+<button class="undo" onclick="undo(0)"> Undo </button>
+<br>
+
+<li class="option"> Eating Out </li>
+<input class="amount" onchange="updateTotal(1)" type="text" value="0"> 
+<button class="undo" onclick="undo(1)"> Undo </button>
+<br>
+
+<li class="option"> Entertainment </li>
+<input class="amount" onchange="updateTotal(2)" type="text" value="0"> 
+<button class="undo" onclick="undo(1)"> Undo </button>
+<br>
+
+</div>
+ 
+<style>
+.container {
+ text-align: center;
+}
+.total {
+  text-align: center;
+  padding-bottom: 20px;
+ }
+ .amount {
+  text-align: center;
+  width: 50px;
+  margin-left:10px;
+  margin-right:10px;
+  display: inline-block;
+ }
+ .option {
+  text-align: left;
+  display: inline-block;
+  width: 130px;
+ }
+ .undo {
+  text-align: left;
+  margin-left:10px;
+  margin-right:10px;
+  display: inline-block;
+ }
+</style>
